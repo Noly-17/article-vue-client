@@ -1,6 +1,5 @@
 import axios from 'axios';
-
-const base_url = 'http://localhost:5000/api';
+const base_url = import.meta.env.VITE_API_URL;
 
 export const POST = async (url, data, config = {}) => {
   try {
