@@ -1,5 +1,5 @@
 import axios from 'axios';
-const base_url = process.env.VUE_APP_API_URL;
+const base_url = String(process.env.VUE_APP_API_URL);
 
 export const POST = async (url, data, config = {}) => {
   try {
