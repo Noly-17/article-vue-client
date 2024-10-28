@@ -68,6 +68,7 @@ const handlePublish = async () => {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding: 10px;
 }
 
 .user-info p {
@@ -112,5 +113,15 @@ const handlePublish = async () => {
 .article-list-wrapper {
   flex-grow: 1;
   overflow: auto;
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    flex-direction: column;
+  }
+
+  .article-content-wrapper {
+    width: unset;
+  }
 }
 </style>

@@ -22,6 +22,7 @@
       <router-link to="/create-article" class="nav-link" @click="closeNav"
         >Create Article</router-link
       >
+      <div class="nav-link logout" @click="logout">Logout</div>
     </nav>
     <div class="right-section">
       <button @click="logout" class="logout-btn">Logout</button>
@@ -111,6 +112,10 @@ defineProps({
   margin-top: 3px;
 }
 
+.logout {
+  display: none;
+}
+
 .logout-btn {
   background-color: #007bff;
   border: none;
@@ -194,6 +199,10 @@ defineProps({
   .dashboard-header {
     flex-direction: column;
     align-items: center;
+  }
+
+  .logout {
+    display: block;
   }
 
   .logout-btn {
